@@ -1,7 +1,51 @@
 *{margin: 0; padding: 0;}
 
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?w2sbor');
+    src:  url('fonts/icomoon.eot?w2sbor#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?w2sbor') format('truetype'),
+      url('fonts/icomoon.woff?w2sbor') format('woff'),
+      url('fonts/icomoon.svg?w2sbor#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #3B9E97;
+    cursor: pointer;
+    
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-github:before {
+    content: "\eab0";
+  }
+  .icon-linkedin2:before {
+    content: "\eaca";
+  }
+  
+
 body,.container,header,main,aside,footer{background: url(img/texture_bg.png);
 }
+
+a{text-decoration: none;}
 .container{
     width: 80%;
     height: 800px;
@@ -16,7 +60,11 @@ header{
     width: 100%;
     height: 150px;
     background-color: #3B9E97;
-    
+}
+
+h1{
+    margin:60px 0 0 20%;
+    font: bold 50px arial,sans-serif;
 }
 
 /* la partie a gauche */
@@ -30,8 +78,46 @@ aside{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    
 }
+
+aside img{
+    display: block;
+    width: 60%;
+    border: 5px solid #3B9E97;
+    box-shadow: #2a2a2a 5px 5px 5px 5px;
+    margin: -100px auto 0 auto;
+}
+
+aside section{
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 50px;
+}
+
+blockquote{
+    text-align: left;
+    font: 18px;
+    margin-left: 10px;
+}
+
+blockquote span{font:bold 30px arial;}
+
+.socialNet h2{
+    display: table;
+    background-color: #349790;
+    background-image: url(img/texture_bg.png);
+    padding: 10px 15px;
+    margin: 0 auto 10px auto;
+    font-family: arial,sans-serif;
+    color: white;
+    text-align: center;
+}
+
+em{
+    font-size: 25px;
+    margin-left: 10px;
+}
+
 
 /* la partie principale */
 main{
@@ -65,11 +151,10 @@ main{
 .contact{
     float: left;
     width: 50%;
-    height: 550px;
-    
+    height: 550px; 
 }
 
-.contact span,h2{
+.contact span,.contact h2{
     display: table;
     background-color: #2a2a2a;
     background-image: url(img/texture_bg.png);
@@ -78,9 +163,9 @@ main{
     margin: 30px 0 20px 20px;
     font-family: arial,sans-serif;
     color: white;
-    }
+}
 
-.contact a{text-decoration: none;color: white}
+.contact a{color: white}
     
 /* la footer */
 footer{
