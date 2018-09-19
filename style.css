@@ -180,4 +180,9 @@ footer{
     width: 20%;
     height: 100px;
     background:red;
+    background-image: url(img/code.jpeg);
+    background-size: cover;
+    background-position: 20px ;
 }
+
+#marq1{margin-top: 5px;}
